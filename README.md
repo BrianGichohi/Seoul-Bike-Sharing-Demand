@@ -10,10 +10,6 @@ To determine the key factors affecting rental bike demand across the year in Seo
 - [Modeling](#modeling)
 - [Results](#results)
 - [Conclusions](#conclusions)
-- [Screenshots](#screenshots)
-- [How to Run](#how-to-run)
-- [License](#license)
-  
 
 # project overview 
 ----------------------------
@@ -63,20 +59,42 @@ Some of the Key Insights observed during the EDA process include:
 ------------------------------------
 At the start of the modeling phase, the categorical variables dataset was subjected to **One Hot Encoding** and the dataset was subjected to **Normalization** using a **Standard Scaler**
 The model was trained using :
-**a) Multilinear Regression**
-**b) Polynomial Regression**
-**c) Gradient Boosting Regressor**
+**- Multilinear Regression**
+**- Polynomial Regression**
+**- Gradient Boosting Regressor**
 
 The Hyperparameter Tuning was done using **GridSearchCV**
 The data was split into training and testing data with 70% of it being training data and 30% being testing data.
 
 # results
+---------------------------------------------------------------------------------------
 | Model                           | R-squared score     |
 ----------------------------------|-------------------- |
 | Multilinear Regression          |  0.551696           |
 | Polynomial Regression           |  0.718120           |
 | Gradient Boosting Regressor     |  0.855677           |
 | GridSearchCV                    |  0.933446           |       
+
+- **Multilinear Regression Residual Plot**
+![Residual Plot for Multilinear Regression](https://github.com/user-attachments/assets/fbc0f61b-82ad-44e5-97db-cfcbb68ac8ab)
+
+- **Polynomial Regression Residual Plot**
+![Residual Plot for Polynomial Regression](https://github.com/user-attachments/assets/7de9bdad-c982-4467-8b90-a8b44921b26c)
+
+- **Gradient Boosting Regressor Residual Plot**
+![Gradient Boosting Regression Residual Plot](https://github.com/user-attachments/assets/dfca8de3-c9f9-4921-8cc0-30b8883aa997)
+
+- **GridSearchCv Residual Plot**
+![GridSearchCV Residual Plot](https://github.com/user-attachments/assets/9b90c8f8-74d0-47d8-ab3f-c95f59ba6e25)
+
+
+
+# conclusions
+------------------------------------------------------------------------------
+- Rental Bike demand is highest during the summer period when temperatures are usually at the highest and lowest during the winter period when temperatures are at the lowest.
+
+- **Temperature** and **Hour** were found to have the highest degree of influence in determining the rental bike demand.
+![Feature Importance](https://github.com/user-attachments/assets/efb83cef-0788-4408-b05d-649a9b52b765)
 
 
 
