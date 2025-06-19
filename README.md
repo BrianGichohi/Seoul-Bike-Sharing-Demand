@@ -5,7 +5,7 @@ To determine the key factors affecting rental bike demand across the year in Seo
 
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
-- [Tools & Libraries](#tools--libraries)
+- [Tools & Libraries](#tools-and-libraries)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Modeling](#modeling)
 - [Results](#results)
