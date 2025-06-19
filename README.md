@@ -59,12 +59,13 @@ Some of the Key Insights observed during the EDA process include:
 ------------------------------------
 At the start of the modeling phase, the categorical variables dataset was subjected to **One Hot Encoding** and the dataset was subjected to **Normalization** using a **Standard Scaler**
 The model was trained using :
-**- Multilinear Regression**
-**- Polynomial Regression**
-**- Gradient Boosting Regressor**
+- Multilinear Regression
+- Polynomial Regression
+- Gradient Boosting Regressor
 
 The Hyperparameter Tuning was done using **GridSearchCV**
 The data was split into training and testing data with 70% of it being training data and 30% being testing data.
+To reduce the Generalization error, a **K- Cross Validation Score was used.
 
 # results
 ---------------------------------------------------------------------------------------
